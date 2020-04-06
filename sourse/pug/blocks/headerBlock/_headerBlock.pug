@@ -1,9 +1,11 @@
 mixin headerBlock()
 	// start headerBlock
-	+b.SECTION.headerBlock.section#headerBlock&attributes(attributes)
+	+b.headerBlock.bg-wrap#headerBlock&attributes(attributes)
+		+pic('header-bg','bg','')(class="picture-bg")
 		.container
-			+b.section-title.text-center
-				h2 headerBlock
-				
-			.row
+			+e.tv-block.bg-wrap
+				+e.live live
+				+pic('header-img-TV','bg','')(class="picture-bg")
+				h1 Поможем провести мероприятие в&nbsp;онлайн-формате
+				p Компания RUVENTS предлагает комплексный набор настраиваемых решений для проведения мероприятия в&nbsp;онлайн-формате
 	// end headerBlock

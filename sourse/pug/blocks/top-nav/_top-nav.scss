@@ -1,31 +1,67 @@
 .top-nav {
-	padding-top: 15px;
-	// position: absolute;
-	top: 100%;
-	// @include clearfix;ss
 	z-index: 20;
-	padding-top: 3px;
 	@include mt;
-	padding-bottom: 10px;
 	top: 0;
 	left: 0;
 	width: 100%;
+	position: absolute;
+	// padding: rem(15) 0;
+	padding-top: rem(15);
+	font-weight: bold;
+	text-transform: uppercase;
 
-	&.fixed {
-		width: 100vw;
-		bottom: auto;
-		margin-top: 0;
-		background-color: #fff;
+	@include media-breakpoint-up(md) {
+		top: calc(5vh + #{rem(4)});
+	}
+
+	top: rem(10);
+
+	.row {
+		align-items: center;
+
+		@include media-breakpoint-up(xxl) {
+			@include roww(26);
+		}
+	}
+
+	@include media-breakpoint-up(xxl) {
+		&__col--logo {
+			margin-right: rem(40);
+		}
 	}
 
 	&__nav {
 		text-align: center;
 		list-style-type: none;
+		margin-bottom: 0;
+		display: flex;
+		max-width: rem(536);
+		display: flex;
+		justify-content: space-between;
+
+		a {
+			color: #ffffff !important;
+		}
 	}
 
 	&__item {
-		display: inline-block;
 		list-style-type: none;
+	}
+
+
+	&__tel {
+		@extend .h6;
+		color: #ffffff !important;
+		font-weight: bold;
+	}
+
+	&__btn {
+		@extend .btn;
+		@extend .btn-outline-white;
+	}
+
+	img {
+		max-width: 100%;
 	}
 
 	// 
@@ -62,5 +98,9 @@
 
 	@include media-breakpoint-down(sm) {}
 
-	@include media-breakpoint-down(xs) {}
+	@include media-breakpoint-down(xs) {
+		.row {
+			@include roww(5)
+		}
+	}
 }

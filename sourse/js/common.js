@@ -87,7 +87,7 @@ const JSCCommon = {
 			$(this)
 				.addClass('active').siblings().removeClass('active')
 				.closest('.' + tab).find('.' + tab + '__content').hide().removeClass('active')
-				.eq($(this).index()).show().addClass('active');
+				.eq($(this).index()).fadeIn().addClass('active');
 
 		});
 	},
@@ -186,6 +186,7 @@ function eventHandler() {
 	}
 	const swiper4 = new Swiper('.color-slider', {
 		// slidesPerView: 5,
+		...defaultSl,
 		slidesPerView: 'auto',
 		watchOverflow: true,
 		spaceBetween: 0,

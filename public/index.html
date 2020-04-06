@@ -25,66 +25,631 @@
 	</head>
 	<body><!--[if lt IE 11]><p   class="browsehappy container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p><![endif]-->
 		<div class="main-wrapper">
-			<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
-			</div>
 			<div class="menu-mobile menu-mobile--js d-lg-none">
 				<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
 				</div>
 				<div class="menu-mobile__inner">
 					<ul class="menu-mobile__nav" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="/" itemprop="url">Главная</a>
+						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#sServises" itemprop="url">Услуги</a>
 						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url">Услуги  </a>
+						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#sClients" itemprop="url">Клиенты</a>
 						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url">Подбор септика   </a>
+						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#sAbout" itemprop="url">О компании</a>
 						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url">Акции </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url"> О компании  </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url"> Доставка и оплата </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url"> Клиентам  </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url"> Наши работы   </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url">Контакты </a>
+						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#sContact" itemprop="url">Контакты</a>
 						</li>
 					</ul>
 					<div class="text-right"></div>
 				</div>
 			</div>
 			<!--  мобильное меню-->
-			<!-- start header-->
-			<section class="header section" id="header">
+			<!-- start top-nav-->
+			<div class="top-nav block-with-lazy">
 				<div class="container">
-					<div class="section-title text-center">
-						<h2>header</h2>
+					<div class="row">
+						<div class="top-nav__col top-nav__col--logo col-lg-auto col"><a class="top-nav__logo" href="/"><img src="img/svg/logo.svg" alt=""/></a>
+						</div>
+						<div class="col d-none d-lg-block">
+							<ul class="top-nav__nav" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+								<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#sServises" itemprop="url">Услуги</a>
+								</li>
+								<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#sClients" itemprop="url">Клиенты</a>
+								</li>
+								<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#sAbout" itemprop="url">О компании</a>
+								</li>
+								<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#sContact" itemprop="url">Контакты</a>
+								</li>
+							</ul>
+						</div>
+						<div class="top-nav__col col-auto"><a class="top-nav__tel" href="tel:+7(495)950-56-51">+7 (495) 950-56-51</a>
+						</div>
+						<div class="top-nav__col col-auto d-none d-md-block"><a class="top-nav__btn link-modal" href="#modal-call">Перезвоните мне</a>
+						</div>
+						<div class="top-nav__col col-auto d-lg-none">
+							<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+							</div>
+						</div>
 					</div>
-					<div class="row"></div>
 				</div>
-			</section>
-			<!-- end header-->
+			</div>
+			<!-- end top-nav-->
 			<!-- start headerBlock-->
-			<section class="headerBlock section" id="headerBlock">
+			<div class="headerBlock bg-wrap" id="headerBlock">
+				<!-- picture-->
+				<picture class="picture-bg"> 
+					<source srcset="img/@2x/webp/header-bg.webp" type="image/webp" media="(min-width:576px)"/>
+					<source srcset="img/@1x/webp/header-bg.webp" type="image/webp"/>
+					<source srcset="img/@2x/header-bg.jpg" type="image/jpg" media="(min-width:576px)"/>
+					<source srcset="img/@1x/header-bg.jpg" type="image/jpg"/><img class="object-fit-js" src="img/@2x/header-bg.jpg" alt=""/>
+				</picture>
+				<!-- /picture-->
 				<div class="container">
-					<div class="section-title text-center">
-						<h2>headerBlock</h2>
+					<div class="headerBlock__tv-block bg-wrap">
+						<div class="headerBlock__live">live
+						</div>
+						<!-- picture-->
+						<picture class="picture-bg"> 
+							<source srcset="img/@2x/webp/header-img-TV.webp" type="image/webp" media="(min-width:576px)"/>
+							<source srcset="img/@1x/webp/header-img-TV.webp" type="image/webp"/>
+							<source srcset="img/@2x/header-img-TV.jpg" type="image/jpg" media="(min-width:576px)"/>
+							<source srcset="img/@1x/header-img-TV.jpg" type="image/jpg"/><img class="object-fit-js" src="img/@2x/header-img-TV.jpg" alt=""/>
+						</picture>
+						<!-- /picture-->
+						<h1>Поможем провести мероприятие в&nbsp;онлайн-формате</h1>
+						<p>Компания RUVENTS предлагает комплексный набор настраиваемых решений для проведения мероприятия в&nbsp;онлайн-формате</p>
 					</div>
-					<div class="row"></div>
 				</div>
-			</section>
+			</div>
 			<!-- end headerBlock-->
-			<!-- start sForm-->
-			<section class="sForm section" id="sForm">
+			<!-- start sServises-->
+			<section class="sServises section" id="sServises">
 				<div class="container">
-					<div class="section-title text-center">
-						<h2>sForm</h2>
+					<div class="section-title">
+						<h2>Услуги</h2>
 					</div>
-					<div class="row"></div>
+					<div class="tabs">
+						<div class="tabs__caption">
+							<div class="tabs__btn active">Дизайн</div>
+							<div class="tabs__btn">Разработка сайтов</div>
+							<div class="tabs__btn">Регистрация участников</div>
+							<div class="tabs__btn">Личный кабинет и live-сервисы</div>
+							<div class="tabs__btn">Интерактивные 3D-модели мероприятия</div>
+							<div class="tabs__btn">Онлайн-трансляция и перевод</div>
+							<div class="tabs__btn">Мобильные приложения</div>
+							<div class="tabs__btn">Информационные и рекламные кампании</div>
+							<div class="tabs__btn">Цифровые сертификаты и дипломы</div>
+						</div>
+						<div class="tabs__wrap">
+										<div class="tabs__content active">
+											<div class="row">
+												<div class="sServises__col col-xl-6 col-md-4">
+													<div class="sServises__img-wrap">
+														<!-- picture-->
+														<picture> 
+															<source srcset="img/@2x/webp/servise-1.webp" type="image/webp" media="(min-width:576px)"/>
+															<source srcset="img/@1x/webp/servise-1.webp" type="image/webp"/>
+															<source srcset="img/@2x/servise-1.png" type="image/png" media="(min-width:576px)"/>
+															<source srcset="img/@1x/servise-1.png" type="image/png"/><img class="object-fit-js" src="img/@2x/servise-1.png" alt=""/>
+														</picture>
+														<!-- /picture-->
+														<div class="sServises__icon-wrap">
+															<svg class="icon icon-servise-1 ">
+																<use xlink:href="img/svg/sprite.svg#servise-1"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+												<div class="sServises__col col">
+													<div class="sServises__wrap">
+														<div class="sServises__title">
+															<svg class="icon icon-servise-1 ">
+																<use xlink:href="img/svg/sprite.svg#servise-1"></use>
+															</svg>Дизайн
+														</div>
+														<p>Визуальная коммуникация в&nbsp;онлайн-формате требует новых подходов и&nbsp;решений. У&nbsp;нас многолетний опыт разработки сайтов мероприятий разного масштаба и&nbsp;функционала. Мы&nbsp;поможем сделать визуальное представление мероприятия не&nbsp;только красивым, но&nbsp;и&nbsp;функциональным.</p>
+														<div class="sServises__list-title">Оперативно поможем в разработке:
+														</div>
+														<ul>
+															<li>Фирменного стиля</li>
+															<li>Брендбука</li>
+															<li>Логотипа и концепции его внедрения</li>
+															<li>Лендинга или полноценного сайта</li>
+															<li>Рекламных материалов и макетов рассылок</li>
+															<li>Полиграфии</li>
+															<li>Иллюстраций</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tabs__content">
+											<div class="row">
+												<div class="sServises__col col-xl-6 col-md-4">
+													<div class="sServises__img-wrap">
+														<!-- picture-->
+														<picture> 
+															<source srcset="img/@2x/webp/servise-2.webp" type="image/webp" media="(min-width:576px)"/>
+															<source srcset="img/@1x/webp/servise-2.webp" type="image/webp"/>
+															<source srcset="img/@2x/servise-2.png" type="image/png" media="(min-width:576px)"/>
+															<source srcset="img/@1x/servise-2.png" type="image/png"/><img class="object-fit-js" src="img/@2x/servise-2.png" alt=""/>
+														</picture>
+														<!-- /picture-->
+														<div class="sServises__icon-wrap">
+															<svg class="icon icon-servise-2 ">
+																<use xlink:href="img/svg/sprite.svg#servise-2"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+												<div class="sServises__col col">
+													<div class="sServises__wrap">
+														<div class="sServises__title">
+															<svg class="icon icon-servise-2 ">
+																<use xlink:href="img/svg/sprite.svg#servise-2"></use>
+															</svg>Разработка сайтов
+														</div>
+														<p>Разработка сайтов любого уровня сложности. От&nbsp;простых и&nbsp;современных лендингов, до&nbsp;сайтов со&nbsp;сложным функционалом (настраиваемые формы регистрации, личные кабинеты, сервисы деловых встреч и&nbsp;т.п.).</p>
+														<p>Простой одностраничный сайт (лендинг) может быть запущен уже через неделю, с&nbsp;момента согласования структуры и&nbsp;получения контента. Сложный сайт с&nbsp;встроенной регистрацией и&nbsp;сервисами разрабатывается 2-3&nbsp;месяца.</p>
+														<p>На&nbsp;простые сайты может быть встроена форма регистрации участников и&nbsp;оплаты услуг (для платных мероприятий), под проекты среднего и&nbsp;крупного масштаба могут быть разработаны сайты с&nbsp;индивидуальным функционалом, таким как настраиваемые личные кабинеты, формирование коллективных корзин, интеграция с&nbsp;системами заказчика, модули нетворкинга и&nbsp;деловых встреч, модули формирования индивидуального расписания, API и&nbsp;множество других уникальных передовых решений</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tabs__content">
+											<div class="row">
+												<div class="sServises__col col-xl-6 col-md-4">
+													<div class="sServises__img-wrap">
+														<!-- picture-->
+														<picture> 
+															<source srcset="img/@2x/webp/servise-3.webp" type="image/webp" media="(min-width:576px)"/>
+															<source srcset="img/@1x/webp/servise-3.webp" type="image/webp"/>
+															<source srcset="img/@2x/servise-3.png" type="image/png" media="(min-width:576px)"/>
+															<source srcset="img/@1x/servise-3.png" type="image/png"/><img class="object-fit-js" src="img/@2x/servise-3.png" alt=""/>
+														</picture>
+														<!-- /picture-->
+														<div class="sServises__icon-wrap">
+															<svg class="icon icon-servise-3 ">
+																<use xlink:href="img/svg/sprite.svg#servise-3"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+												<div class="sServises__col col">
+													<div class="sServises__wrap">
+														<div class="sServises__title">
+															<svg class="icon icon-servise-3 ">
+																<use xlink:href="img/svg/sprite.svg#servise-3"></use>
+															</svg>Регистрация участников
+														</div>
+														<ul>
+															<li><strong>Функциональная система онлайн-регистрации</strong> участников с&nbsp;возможностью гибкой настройки регистрационных форм различного уровня сложности с&nbsp;приемом платежей от&nbsp;физических и&nbsp;юридических лиц.</li>
+															<li><strong>Различные способы интеграции системы</strong> регистрации участников с&nbsp;сайтами мероприятий&nbsp;&mdash; виджеты, интеграция по&nbsp;API, отдельные кастомизированные страницы для аккредитации. </li>
+															<li><strong>Электронные билеты</strong>, уведомления, напоминания для участников.</li>
+															<li><strong>Удобный и&nbsp;технологичный кабинет</strong> администратора для управления списком участников и&nbsp;отслеживания статистики в&nbsp;том числе и&nbsp;финансовой. </li>
+															<li><strong>Системы аккредитации персонала и&nbsp;подрядчиков</strong> с&nbsp;моментальным подтверждением статуса заявки. </li>
+															<li><strong>Надежное хранение персональных данных участников</strong> соответствии с&nbsp;Федеральным законом &laquo;О&nbsp;персональных данных&raquo; ( 152-ФЗ)</li>
+														</ul>
+														<div class="small">Компания ООО &laquo;Рувентс&raquo; является оператором, осуществляющим обработку персональных данных, и&nbsp;внесена в&nbsp;реестр Федеральной службы по&nbsp;надзору в&nbsp;сфере связи, информационных технологий и&nbsp;массовых коммуникаций на&nbsp;основании Приказа No7 от&nbsp;04.07.2014 года с&nbsp;присвоением регистрационного номера 14-0251250</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tabs__content">
+											<div class="row">
+												<div class="sServises__col col-xl-6 col-md-4">
+													<div class="sServises__img-wrap">
+														<!-- picture-->
+														<picture> 
+															<source srcset="img/@2x/webp/servise-4.webp" type="image/webp" media="(min-width:576px)"/>
+															<source srcset="img/@1x/webp/servise-4.webp" type="image/webp"/>
+															<source srcset="img/@2x/servise-4.png" type="image/png" media="(min-width:576px)"/>
+															<source srcset="img/@1x/servise-4.png" type="image/png"/><img class="object-fit-js" src="img/@2x/servise-4.png" alt=""/>
+														</picture>
+														<!-- /picture-->
+														<div class="sServises__icon-wrap">
+															<svg class="icon icon-servise-4 ">
+																<use xlink:href="img/svg/sprite.svg#servise-4"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+												<div class="sServises__col col">
+													<div class="sServises__wrap">
+														<div class="sServises__title">
+															<svg class="icon icon-servise-4 ">
+																<use xlink:href="img/svg/sprite.svg#servise-4"></use>
+															</svg>Личный кабинет и live-сервисы
+														</div>
+														<p>Разработка сайтов с&nbsp;личными кабинетами для участников, которые в&nbsp;зависимости от&nbsp;статуса могут определять уровень доступа к&nbsp;различным возможностям онлайн-участия в&nbsp;мероприятии:</p>
+														<ul>
+															<li><strong>Мгновенный доступ к&nbsp;трансляциям выступлений</strong> с&nbsp;возможностью оценки сессий и&nbsp;функцией коллективного обсуждения. </li>
+															<li><strong>Постоянный доступ к&nbsp;материалам выступлений</strong> (презентациям, сопроводительным файлам) и&nbsp;видеоархивам.</li>
+															<li><strong>Общение между участниками</strong> мероприятия в&nbsp;общих группах и&nbsp;индивидуальных чатах. </li>
+															<li><strong>Посещение виртуальных выставок</strong> с&nbsp;возможностью скачивания материалов от&nbsp;экспонентов.</li>
+															<li><strong>Проведение онлайн тестов и&nbsp;опросов</strong> среди участников с&nbsp;выводом статистики в&nbsp;прямом эфире.</li>
+															<li><strong>Живое общение со&nbsp;спикерами</strong> через форму отправки вопросов.</li>
+															<li><strong>Проведение онлайн-конкурсов</strong> с&nbsp;подачей заявок и&nbsp;экспертной оценкой.</li>
+															<li><strong>Отработка партнерских пакетов</strong> (реклама в&nbsp;чатах, персональные уведомления, всплывающие баннеры).</li>
+															<li><strong>Интеграции с&nbsp;системами заказчика</strong> для двустороннего обмена информацией.</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tabs__content">
+											<div class="row">
+												<div class="sServises__col col-xl-6 col-md-4">
+													<div class="sServises__img-wrap">
+														<!-- picture-->
+														<picture> 
+															<source srcset="img/@2x/webp/servise-5.webp" type="image/webp" media="(min-width:576px)"/>
+															<source srcset="img/@1x/webp/servise-5.webp" type="image/webp"/>
+															<source srcset="img/@2x/servise-5.png" type="image/png" media="(min-width:576px)"/>
+															<source srcset="img/@1x/servise-5.png" type="image/png"/><img class="object-fit-js" src="img/@2x/servise-5.png" alt=""/>
+														</picture>
+														<!-- /picture-->
+														<div class="sServises__icon-wrap">
+															<svg class="icon icon-servise-5 ">
+																<use xlink:href="img/svg/sprite.svg#servise-5"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+												<div class="sServises__col col">
+													<div class="sServises__wrap">
+														<div class="sServises__title">
+															<svg class="icon icon-servise-5 ">
+																<use xlink:href="img/svg/sprite.svg#servise-5"></use>
+															</svg>Интерактивные 3D-модели мероприятия
+														</div>
+														<p>Уникальная онлайн-платформа для проведения мероприятий с&nbsp;визуализацией выставочной площадки и&nbsp;интерактивным взаимодействием с&nbsp;экспонентами.</p>
+														<p>Позволяет создать полную или доработанную цифровую копию площадки проведения мероприятия, обеспечить возможность интерактивного путешествия по&nbsp;мероприятию через браузер. Используя платформу моделирования виртуального мероприятия можно получить</p>
+														<ul>
+															<li><strong>Полностью управляемый виртуальный мир</strong> мероприятия, по&nbsp;которому можно перемещаться используя браузер без каких-либо специальных плагинов</li>
+															<li><strong>Генерировать качественные 3D-рендеры</strong> под любым углом и&nbsp;в&nbsp;любом количестве</li>
+															<li><strong>Создавать видеоролики с&nbsp;пролетами</strong> по&nbsp;виртуальной выставке</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tabs__content">
+											<div class="row">
+												<div class="sServises__col col-xl-6 col-md-4">
+													<div class="sServises__img-wrap">
+														<!-- picture-->
+														<picture> 
+															<source srcset="img/@2x/webp/servise-6.webp" type="image/webp" media="(min-width:576px)"/>
+															<source srcset="img/@1x/webp/servise-6.webp" type="image/webp"/>
+															<source srcset="img/@2x/servise-6.png" type="image/png" media="(min-width:576px)"/>
+															<source srcset="img/@1x/servise-6.png" type="image/png"/><img class="object-fit-js" src="img/@2x/servise-6.png" alt=""/>
+														</picture>
+														<!-- /picture-->
+														<div class="sServises__icon-wrap">
+															<svg class="icon icon-servise-6 ">
+																<use xlink:href="img/svg/sprite.svg#servise-6"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+												<div class="sServises__col col">
+													<div class="sServises__wrap">
+														<div class="sServises__title">
+															<svg class="icon icon-servise-6 ">
+																<use xlink:href="img/svg/sprite.svg#servise-6"></use>
+															</svg>Онлайн-трансляция и перевод
+														</div>
+														<p>Уникальная онлайн-платформа для проведения мероприятий с&nbsp;визуализацией выставочной площадки и&nbsp;интерактивным взаимодействием с&nbsp;экспонентами.</p>
+														<p>Позволяет создать полную или доработанную цифровую копию площадки проведения мероприятия, обеспечить возможность интерактивного путешествия по&nbsp;мероприятию через браузер. Используя платформу моделирования виртуального мероприятия можно получить</p>
+														<ul>
+															<li><strong>Полностью управляемый виртуальный мир</strong> мероприятия, по&nbsp;которому можно перемещаться используя браузер без каких-либо специальных плагинов</li>
+															<li><strong>Генерировать качественные 3D-рендеры</strong> под любым углом и&nbsp;в&nbsp;любом количестве</li>
+															<li><strong>Создавать видеоролики с&nbsp;пролетами</strong> по&nbsp;виртуальной выставке</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tabs__content">
+											<div class="row">
+												<div class="sServises__col col-xl-6 col-md-4">
+													<div class="sServises__img-wrap">
+														<!-- picture-->
+														<picture> 
+															<source srcset="img/@2x/webp/servise-7.webp" type="image/webp" media="(min-width:576px)"/>
+															<source srcset="img/@1x/webp/servise-7.webp" type="image/webp"/>
+															<source srcset="img/@2x/servise-7.png" type="image/png" media="(min-width:576px)"/>
+															<source srcset="img/@1x/servise-7.png" type="image/png"/><img class="object-fit-js" src="img/@2x/servise-7.png" alt=""/>
+														</picture>
+														<!-- /picture-->
+														<div class="sServises__icon-wrap">
+															<svg class="icon icon-servise-7 ">
+																<use xlink:href="img/svg/sprite.svg#servise-7"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+												<div class="sServises__col col">
+													<div class="sServises__wrap">
+														<div class="sServises__title">
+															<svg class="icon icon-servise-7 ">
+																<use xlink:href="img/svg/sprite.svg#servise-7"></use>
+															</svg>Мобильные приложения
+														</div>
+														<p>Уникальная онлайн-платформа для проведения мероприятий с&nbsp;визуализацией выставочной площадки и&nbsp;интерактивным взаимодействием с&nbsp;экспонентами.</p>
+														<p>Позволяет создать полную или доработанную цифровую копию площадки проведения мероприятия, обеспечить возможность интерактивного путешествия по&nbsp;мероприятию через браузер. Используя платформу моделирования виртуального мероприятия можно получить</p>
+														<ul>
+															<li><strong>Полностью управляемый виртуальный мир</strong> мероприятия, по&nbsp;которому можно перемещаться используя браузер без каких-либо специальных плагинов</li>
+															<li><strong>Генерировать качественные 3D-рендеры</strong> под любым углом и&nbsp;в&nbsp;любом количестве</li>
+															<li><strong>Создавать видеоролики с&nbsp;пролетами</strong> по&nbsp;виртуальной выставке</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tabs__content">
+											<div class="row">
+												<div class="sServises__col col-xl-6 col-md-4">
+													<div class="sServises__img-wrap">
+														<!-- picture-->
+														<picture> 
+															<source srcset="img/@2x/webp/servise-8.webp" type="image/webp" media="(min-width:576px)"/>
+															<source srcset="img/@1x/webp/servise-8.webp" type="image/webp"/>
+															<source srcset="img/@2x/servise-8.png" type="image/png" media="(min-width:576px)"/>
+															<source srcset="img/@1x/servise-8.png" type="image/png"/><img class="object-fit-js" src="img/@2x/servise-8.png" alt=""/>
+														</picture>
+														<!-- /picture-->
+														<div class="sServises__icon-wrap">
+															<svg class="icon icon-servise-8 ">
+																<use xlink:href="img/svg/sprite.svg#servise-8"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+												<div class="sServises__col col">
+													<div class="sServises__wrap">
+														<div class="sServises__title">
+															<svg class="icon icon-servise-8 ">
+																<use xlink:href="img/svg/sprite.svg#servise-8"></use>
+															</svg>Информационные и рекламные кампании
+														</div>
+														<p>Поможем в&nbsp;реализации коммуникации с&nbsp;аудиторией через электронные рассылки и&nbsp;sms- сообщения. Оказываем комплексные услуги по&nbsp;продвижению в&nbsp;социальных сетях (SMM), главной задачей которого является популяризация бренда и&nbsp;привлечение внимания к&nbsp;сервису/организации</p>
+														<ul class="column2">
+															<li>Создание сообщества </li>
+															<li>Создание дизайна групп и&nbsp;страниц</li>
+															<li>Создание контента</li>
+															<li>Администрирование сообществ</li>
+															<li>Привлечение целевой аудитории</li>
+															<li>Таргетинговая реклама</li>
+															<li>Реклама в&nbsp;сообществах</li>
+															<li>Работа с&nbsp;инфлюенсерами</li>
+														</ul>
+														<p>Не&nbsp;являясь классическим рекламным агентством мы&nbsp;всегда исходим из&nbsp;задачи. Мы&nbsp;не&nbsp;предлагаем инструменты продвижения, если не&nbsp;видим в&nbsp;них реальной необходимости, наша задача изучить объект продвижения и&nbsp;предложить максимально эффективную стратегию достижения поставленной цели</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tabs__content">
+											<div class="row">
+												<div class="sServises__col col-xl-6 col-md-4">
+													<div class="sServises__img-wrap">
+														<!-- picture-->
+														<picture> 
+															<source srcset="img/@2x/webp/servise-9.webp" type="image/webp" media="(min-width:576px)"/>
+															<source srcset="img/@1x/webp/servise-9.webp" type="image/webp"/>
+															<source srcset="img/@2x/servise-9.png" type="image/png" media="(min-width:576px)"/>
+															<source srcset="img/@1x/servise-9.png" type="image/png"/><img class="object-fit-js" src="img/@2x/servise-9.png" alt=""/>
+														</picture>
+														<!-- /picture-->
+														<div class="sServises__icon-wrap">
+															<svg class="icon icon-servise-9 ">
+																<use xlink:href="img/svg/sprite.svg#servise-9"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+												<div class="sServises__col col">
+													<div class="sServises__wrap">
+														<div class="sServises__title">
+															<svg class="icon icon-servise-9 ">
+																<use xlink:href="img/svg/sprite.svg#servise-9"></use>
+															</svg>Цифровые сертификаты и дипломы
+														</div>
+														<p>Рассылка именных сертификатов и&nbsp;дипломов&nbsp;&mdash; это уникальная возможность мотивировать и&nbsp;отбрдагодарить участников вашего мероприятия . </p>
+														<p>От&nbsp;вас необходим только макет документа, а&nbsp;все остальное мы&nbsp;сделаем автоматически: Подготовим красивое именное письмо в&nbsp;стиле мероприятия с&nbsp;сопроводительным текстом, сделаем рассылку с&nbsp;уникальной ссылкой на&nbsp;именной сертификат (диплом, грамота, благодарность) об&nbsp;участии</p>
+													</div>
+												</div>
+											</div>
+										</div>
+						</div>
+					</div>
 				</div>
 			</section>
-			<!-- end sForm-->
+			<!-- end sServises-->
+			<!-- start sClients-->
+			<section class="sClients section" id="sClients">
+				<div class="container">
+					<div class="section-title">
+						<h2>Клиенты</h2>
+					</div>
+					<div class="sClients__row row">
+						<div class="sClients__col col-xl-2 col-lg-3 col-md-3 col-4">
+							<div class="sClients__img-wrap hex">
+								<!-- picture-->
+								<picture class="lazy"> <img src="#" data-src="img/@2x/logo-1.png" alt=""/> 
+								</picture>
+								<!-- /picture-->
+							</div>
+						</div>
+						<div class="sClients__col col-xl-2 col-lg-3 col-md-3 col-4">
+							<div class="sClients__img-wrap hex">
+								<!-- picture-->
+								<picture class="lazy"> <img src="#" data-src="img/@2x/logo-2.png" alt=""/> 
+								</picture>
+								<!-- /picture-->
+							</div>
+						</div>
+						<div class="sClients__col col-xl-2 col-lg-3 col-md-3 col-4">
+							<div class="sClients__img-wrap hex">
+								<!-- picture-->
+								<picture class="lazy"> <img src="#" data-src="img/@2x/logo-3.png" alt=""/> 
+								</picture>
+								<!-- /picture-->
+							</div>
+						</div>
+						<div class="sClients__col col-xl-2 col-lg-3 col-md-3 col-4">
+							<div class="sClients__img-wrap hex">
+								<!-- picture-->
+								<picture class="lazy"> <img src="#" data-src="img/@2x/logo-4.png" alt=""/> 
+								</picture>
+								<!-- /picture-->
+							</div>
+						</div>
+						<div class="sClients__col col-xl-2 col-lg-3 col-md-3 col-4">
+							<div class="sClients__img-wrap hex">
+								<!-- picture-->
+								<picture class="lazy"> <img src="#" data-src="img/@2x/logo-5.png" alt=""/> 
+								</picture>
+								<!-- /picture-->
+							</div>
+						</div>
+						<div class="sClients__col col-xl-2 col-lg-3 col-md-3 col-4">
+							<div class="sClients__img-wrap hex">
+								<!-- picture-->
+								<picture class="lazy"> <img src="#" data-src="img/@2x/logo-6.png" alt=""/> 
+								</picture>
+								<!-- /picture-->
+							</div>
+						</div>
+						<div class="sClients__col col-xl-2 col-lg-3 col-md-3 col-4">
+							<div class="sClients__img-wrap hex">
+								<!-- picture-->
+								<picture class="lazy"> <img src="#" data-src="img/@2x/logo-7.png" alt=""/> 
+								</picture>
+								<!-- /picture-->
+							</div>
+						</div>
+						<div class="sClients__col col-xl-2 col-lg-3 col-md-3 col-4">
+							<div class="sClients__img-wrap hex">
+								<!-- picture-->
+								<picture class="lazy"> <img src="#" data-src="img/@2x/logo-8.png" alt=""/> 
+								</picture>
+								<!-- /picture-->
+							</div>
+						</div>
+						<div class="sClients__col col-xl-2 col-lg-3 col-md-3 col-4">
+							<div class="sClients__img-wrap hex">
+								<!-- picture-->
+								<picture class="lazy"> <img src="#" data-src="img/@2x/logo-9.png" alt=""/> 
+								</picture>
+								<!-- /picture-->
+							</div>
+						</div>
+						<div class="sClients__col col-xl-2 col-lg-3 col-md-3 col-4">
+							<div class="sClients__img-wrap hex">
+								<!-- picture-->
+								<picture class="lazy"> <img src="#" data-src="img/@2x/logo-10.png" alt=""/> 
+								</picture>
+								<!-- /picture-->
+							</div>
+						</div>
+						<div class="sClients__col col-xl-2 col-lg-3 col-md-3 col-4">
+							<div class="sClients__img-wrap hex">
+								<!-- picture-->
+								<picture class="lazy"> <img src="#" data-src="img/@2x/logo-11.png" alt=""/> 
+								</picture>
+								<!-- /picture-->
+							</div>
+						</div>
+						<div class="sClients__col col-xl-2 col-lg-3 col-md-3 col-4">
+							<div class="sClients__img-wrap hex">
+								<!-- picture-->
+								<picture class="lazy"> <img src="#" data-src="img/@2x/logo-12.png" alt=""/> 
+								</picture>
+								<!-- /picture-->
+							</div>
+						</div>
+						<div class="sClients__col col-xl-2 col-lg-3 col-md-3 col-4">
+							<div class="sClients__img-wrap hex">
+								<!-- picture-->
+								<picture class="lazy"> <img src="#" data-src="img/@2x/logo-13.png" alt=""/> 
+								</picture>
+								<!-- /picture-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sClients-->
+			<!-- start sAbout-->
+			<section class="sAbout section" id="sAbout">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>О компании </h2>
+					</div>
+					<div class="row">
+						<div class="col-xl-auto col-sm-6">
+									<div class="sAbout__item">
+										<div class="sAbout__img-wrap lazy"><img src="#" data-src="img/@2x/about-i-1.png" alt=""/>
+										</div>
+										<div class="sAbout__text">Являемся аккредитованным оператором персональных данных
+										</div>
+									</div>
+									<div class="sAbout__item">
+										<div class="sAbout__img-wrap lazy"><img src="#" data-src="img/@2x/about-i-2.png" alt=""/>
+										</div>
+										<div class="sAbout__text">Являемся аккредитованным оператором персональных данных
+										</div>
+									</div>
+									<div class="sAbout__item">
+										<div class="sAbout__img-wrap lazy"><img src="#" data-src="img/@2x/about-i-3.png" alt=""/>
+										</div>
+										<div class="sAbout__text">Являемся аккредитованным оператором персональных данных
+										</div>
+									</div>
+						</div>
+						<div class="col-xl-auto col-sm-6 order-xl-last">
+									<div class="sAbout__item">
+										<div class="sAbout__img-wrap lazy"><img src="#" data-src="img/@2x/about-i-4.png" alt=""/>
+										</div>
+										<div class="sAbout__text">Свыше 1500 успешных мероприятий
+										</div>
+									</div>
+									<div class="sAbout__item">
+										<div class="sAbout__img-wrap lazy"><img src="#" data-src="img/@2x/about-i-5.png" alt=""/>
+										</div>
+										<div class="sAbout__text">Свыше 1500 успешных мероприятий
+										</div>
+									</div>
+									<div class="sAbout__item">
+										<div class="sAbout__img-wrap lazy"><img src="#" data-src="img/@2x/about-i-6.png" alt=""/>
+										</div>
+										<div class="sAbout__text">Свыше 1500 успешных мероприятий
+										</div>
+									</div>
+						</div>
+						<div class="col">
+							<div class="sAbout__center-block sAbout__center-block--lg">
+								<div class="sAbout__content">
+									<h6>Более чем 10-летний опыт проведения и&nbsp;содействия в&nbsp;организации крупнейших ИТ-мероприятий в&nbsp;России. Компания имеет собственные уникальные компетенции в&nbsp;области разработки, аккредитации и&nbsp;работы с&nbsp;участниками</h6>
+									<p>Опыт помогает нам лучше понимать все критичные точки при организации мероприятий, помогать полностью закрыть все вопросы связанные с&nbsp;разработкой и&nbsp;взаимодействием с&nbsp;участниками, предложив наиболее эффективные подходы.</p>
+									<p>Имеем большой опыт работы на&nbsp;федеральных и&nbsp;региональных форумах, мероприятиях с&nbsp;участием первых лиц и&nbsp;особо охраняемых персон, массовых мероприятиях свыше 20&nbsp;000 участников и&nbsp;небольших конференциях на&nbsp;100&nbsp;человек. </p>
+									<p>Занимаясь разработкой крупных веб-ориентированных информационных систем, мобильных приложений и&nbsp;сервисов, у&nbsp;нас есть собственный RnD отдел&nbsp;&mdash; мы&nbsp;самостоятельно разрабатываем и&nbsp;внедряем новые решения</p>
+								</div>
+							</div>
+							<div class="sAbout__wrap">
+								<div class="sAbout__center-block sAbout__center-block--sm">Собственный <br/>парк <br/>оборудования
+									<div class="before"></div>
+								</div>
+								<div class="sAbout__center-block sAbout__center-block--sm">Собственный <br/>отдел <br/>разработок, <br/>развития <br/>и&nbsp;технической поддержки
+									<div class="before"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sAbout-->
 			<!-- start sContact-->
 			<section class="sContact section" id="sContact">
 				<div class="container">
@@ -130,8 +695,6 @@
 			<!-- #modal-call-->
 		</div>
 		<!-- modal-->
-		<script src="libs/vue/vue.min.js"></script>
-		<script src="js/app.js"></script>
 		<script src="js/lazy.js"></script>
 		<script src="libs/jquery/jquery.min.js"></script>
 		<!-- полифил для picture-->

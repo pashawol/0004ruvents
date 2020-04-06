@@ -17,26 +17,41 @@ html {
 	// opacity: 0.7;
 }
 
+.headerBlock {
+	min-height: 1000px !important;
+}
+
 body,
 html {
-	font-size: $em-base;
+	min-height: 6000px !important;
+
+	@include media-breakpoint-up(xxl) {
+
+		font-size: $em-base;
+	}
+
+	@media (min-width: 360px) {
+
+		font-size: 14px;
+	}
+
+	font-size: 13px;
 	// @include font-size(1rem);
 }
 
 .section {
 	@include bgs;
-	padding-top: rem(40px);
-	padding-bottom: rem(40px);
+	padding-top: rem(22px);
+	padding-bottom: rem(20px);
 }
 
 .section-title {
-	@extend .h2;
-	padding-bottom: em(10);
+	padding-bottom: rem(15);
 
-	>h2 {
-		font-size: inherit;
-
-		@include media-breakpoint-up(md) {}
+	h2 {
+		text-transform: uppercase;
+		font-weight: bold;
+		line-height: 1.08;
 	}
 }
 
@@ -328,13 +343,30 @@ ul {
 
 
 .tabs {
+	&__caption {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: rem(-6);
+		margin-right: rem(-6);
+	}
+
 	&__btn {
+		margin-left: rem(6);
+		margin-right: rem(6);
+		position: relative;
+		border: 1px solid rgba(255, 255, 255, 0.21);
+		padding: rem(8) rem(10);
+		margin-bottom: rem(9);
+		@include mt;
+		line-height: 1.2;
+
 		&:hover {
 			cursor: pointer;
+			background-color: $warning;
 		}
 
 		&.active {
-			background-color: green;
+			background-color: $warning;
 		}
 
 	}
@@ -487,6 +519,7 @@ img.img-bg,
 a {
 	@include mt;
 }
+
 img.img-bg,
 .picture-bg {
 	position: absolute;
