@@ -21,6 +21,12 @@ html {
 	// min-height: 1000px !important;
 }
 
+@include media-breakpoint-up(xxl) {
+	.h4 {
+		font-size: rem(35);
+	}
+}
+
 body,
 html {
 	// min-height: 6000px !important;

@@ -46,7 +46,7 @@
 
 		@include media-breakpoint-up(lg) {
 
-			// margin-top: rem(25);
+			margin-top: rem(25);
 		}
 
 		margin-bottom: rem(25);
@@ -190,7 +190,10 @@
 		margin-bottom: rem(30);
 
 		&:nth-child(1) {
-			min-height: rem(592);
+			@include media-breakpoint-up(lg) {
+
+				min-height: rem(592);
+			}
 		}
 
 		&:nth-child(2) {
