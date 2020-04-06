@@ -5,7 +5,7 @@ mixin sServises()
 			+b.section-title
 				h2 Услуги
 			.tabs
-				.tabs__caption
+				.tabs__caption( class="wow fadeIn "  data-wow-delay=`${delay + .1}s` data-wow-duration=`${dur }s`   )
 					.tabs__btn.active Дизайн
 					.tabs__btn Разработка сайтов
 					.tabs__btn Регистрация участников
@@ -15,16 +15,16 @@ mixin sServises()
 					.tabs__btn Мобильные приложения
 					.tabs__btn Информационные и рекламные кампании
 					.tabs__btn Цифровые сертификаты и дипломы
-				.tabs__wrap
+				.tabs__wrap( class="wow fadeInUp "  data-wow-delay=`${delay + .2}s` data-wow-duration=`${dur }s`   )
 					mixin cont(i, t)
 						.tabs__content&attributes(attributes)
 							.row
-								+e.col.col-xl-6.col-md-4
+								+e.col.col-xl-6.col-lg-4
 									+e.img-wrap
 										+pic(`servise-${i}.png`,'bg','')
 										+e.icon-wrap
 											+icon(`servise-${i}`)
-								+e.col.col
+								+e.col.col 
 									+e.wrap
 										+e.title
 											+icon(`servise-${i}`)

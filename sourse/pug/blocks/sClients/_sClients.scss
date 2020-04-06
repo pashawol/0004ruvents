@@ -20,7 +20,7 @@
 		--hex-width: #{rem(170)};
 	}
 
-	--hex-width: calc(100vw / 3 - #{rem(10)} - 8px);
+	--hex-width: calc(100vw / 3 - #{rem(20)} - 8px);
 
 	// --hex-width: #{rem(237)};
 
@@ -121,7 +121,7 @@
 		@include media-breakpoint-down(xs) {
 
 			&:nth-child(5n + 4) {
-				margin-left: calc(var(--hex-width) / 2 + #{rem(5)});
+				margin-left: calc(var(--hex-width) / 2 + #{rem(8)});
 
 
 			}
@@ -150,7 +150,7 @@
 			margin-top: calc(var(--hex-height) / 2 - 10px);
 		}
 
-		margin-top: calc(var(--hex-height) / 2 - 25px);
+		margin-top: calc(var(--hex-height) / 2 - 20px);
 		// top: -10px;
 		// margin-top: -10px;
 
@@ -160,23 +160,39 @@
 	.hex::before,
 	.hex::after {
 		position: absolute;
-		left: 50%;
-		content: " ";
-		width: var(--hex-width);
-		background-color: #fff;
-		height: var(--hex-height);
 		left: 0;
-		top: 0;
+		content: " ";
+		width: 0;
+		height: 0;
+		border-left-width: var(--hex-border-x-width);
+		border-right-width: var(--hex-border-x-width);
+		border-style: solid;
+		border-color: transparent;
 	}
 
 	.hex:before {
-		transform: rotate(60deg);
+		border-bottom-color: #fff;
+		top: calc(calc(var(--hex-height) / - 2));
+		border-top: none;
+		border-bottom-width: calc(var(--hex-height) / 2);
 	}
 
 	.hex:after {
-		transform: rotate(-60deg);
+		bottom: calc(calc(var(--hex-height) / - 2));
+		border-bottom: none;
+		border-top-width: calc(var(--hex-height) / 2);
+		border-top-color: #fff;
 
 	}
+
+	// .hex:before {
+	// 	transform: rotate(60deg);
+	// }
+
+	// .hex:after {
+	// 	transform: rotate(-60deg);
+
+	// }
 
 	picture {
 		@include media-breakpoint-up(sm) {

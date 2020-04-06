@@ -175,8 +175,23 @@ function eventHandler() {
 	}, _defineProperty(_objectSpread2, "watchOverflow", true), _defineProperty(_objectSpread2, "slidesPerGroup", 3), _defineProperty(_objectSpread2, "loop", true), _defineProperty(_objectSpread2, "loopFillGroupWithBlank", true), _defineProperty(_objectSpread2, "touchRatio", 0.2), _defineProperty(_objectSpread2, "slideToClickedSlide", true), _defineProperty(_objectSpread2, "freeModeMomentum", true), _defineProperty(_objectSpread2, "navigation", {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev'
-	}), _objectSpread2))); // modal window
-
+	}), _objectSpread2)));
+	var dur = .6;
+	var delay = dur;
+	$('.section-title').each(function () {
+		$(this).addClass("wow fadeInUp");
+		$(this).attr("data-wow-duration", dur + 's'); // $(this).attr("data-wow-delay", delay + 's')
+	});
+	$(".sClients__col ").each(function (i) {
+		$(this).attr("data-wow-delay", delay * .1 * (i + .5) + 's');
+	});
+	$(" .sAbout__item").each(function (i) {
+		$(this).attr("data-wow-delay", delay * .1 * (i + .5) + 's');
+	});
+	var wow = new WOW({
+		mobile: false
+	});
+	wow.init();
 	var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
 
 	if (isIE11) {

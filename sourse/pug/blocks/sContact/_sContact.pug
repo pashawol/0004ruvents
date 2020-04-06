@@ -1,9 +1,32 @@
 mixin sContact()
 	// start sContact
 	+b.SECTION.sContact.section#sContact&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 sContact
-				
+		.container 
+			.before( class="wow fadeInLeft"  data-wow-delay=`${delay + .8}s` data-wow-duration=`${dur }s`   )
 			.row
+				+e.col.col.order-last( class="wow fadeIn"  data-wow-delay=`${delay + 1}s` data-wow-duration=`${dur }s`   )
+					h2 
+						a(href="tel:+7(495)109-02-00") +7 (495) 109-02-00
+					+e.item(href="tel:event@ruvents.com")
+						+icon("mail")
+						span event@ruvents.com
+					+e.item
+						+icon("web")
+						span 123557, Москва, Пресненский вал, д.&nbsp;27, стр.&nbsp;2, Корпус &laquo;iЮНЬ&raquo;, 2&nbsp;этаж
+					+e.footer
+						.row
+							.col
+								+e.policy(href="#") Политика конфиденциальности
+							.col-auto © Ruvents 2020
+
+				.col-xl-6
+					.hexa-wrap
+						.after( class="wow fadeIn "  data-wow-delay=`${delay + .5}s` data-wow-duration=`${dur }s`   )
+						.hexa.hexa--sm( class="wow fadeIn "  data-wow-delay=`${delay + .3}s` data-wow-duration=`${dur }s`   )
+							.hex1.hex1--sm
+								.hex2.hex2--sm
+									.hex-iiner--sm
+
+						+e.map-wrap( class="wow fadeIn "  data-wow-delay=`${delay }s` data-wow-duration=`${dur }s`   )
+							<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abd9ca0bd12f5ebfb5e51e12999f94ed14a669b89cb3ca043b66bdd23299ef522&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script> 
 	// end sContact

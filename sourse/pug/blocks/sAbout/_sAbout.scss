@@ -166,6 +166,7 @@
 					height: rem(520px);
 					left: 5%;
 					bottom: -150%;
+					z-index: -1;
 				}
 
 				@include media-breakpoint-up(xl) {
@@ -192,6 +193,7 @@
 					background-image: url(../img/@2x/about-i-8.png);
 
 					width: rem(206px);
+					z-index: -1;
 					height: rem(194px);
 				}
 

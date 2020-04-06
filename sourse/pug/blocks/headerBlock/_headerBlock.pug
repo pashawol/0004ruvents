@@ -3,7 +3,8 @@ mixin headerBlock()
 	+b.headerBlock.bg-wrap#headerBlock&attributes(attributes)
 		+pic('header-bg','bg','')(class="picture-bg")
 		.container
-			+e.tv-block.bg-wrap
+			.before( class="wow fadeIn "  data-wow-delay=`${delay  }s` data-wow-duration=`${dur }s`   )
+			+e.tv-block.bg-wrap( class="wow fadeIn " data-wow-duration=`${dur }s`   )
 				+e.live live
 				+pic('header-img-TV','bg','')(class="picture-bg")
 				h1 Поможем провести мероприятие в&nbsp;онлайн-формате

@@ -18,12 +18,12 @@ html {
 }
 
 .headerBlock {
-	min-height: 1000px !important;
+	// min-height: 1000px !important;
 }
 
 body,
 html {
-	min-height: 6000px !important;
+	// min-height: 6000px !important;
 
 	@include media-breakpoint-up(xxl) {
 

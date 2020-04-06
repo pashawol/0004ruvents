@@ -206,8 +206,30 @@ function eventHandler() {
 		},
 
 	});
-	// modal window
 
+
+
+	let dur = .6;
+	let delay = dur;
+	$('.section-title').each(function () {
+
+		$(this).addClass("wow fadeInUp");
+		$(this).attr("data-wow-duration", dur + 's');
+		// $(this).attr("data-wow-delay", delay + 's')
+	})
+
+	$(".sClients__col ").each(function (i) {
+		$(this).attr("data-wow-delay", delay * .1 * (i + .5) + 's')
+	})
+
+	$(" .sAbout__item").each(function (i) {
+		$(this).attr("data-wow-delay", delay * .1 * (i + .5) + 's')
+	})
+
+	var wow = new WOW({
+		mobile: false
+	});
+	wow.init();
 
 
 	var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
