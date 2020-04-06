@@ -22,7 +22,7 @@
 		@extend .h6;
 		font-weight: bold;
 		line-height: 1.5;
-		margin-bottom: rem(20);
+		margin-bottom: rem(40);
 	}
 
 	&__text {
@@ -30,7 +30,7 @@
 	}
 
 	&__img-wrap {
-		height: rem(170);
+		height: rem(120);
 		position: relative;
 
 		img {
