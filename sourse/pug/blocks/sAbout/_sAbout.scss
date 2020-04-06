@@ -266,18 +266,20 @@
 
 		&:before {
 			border-bottom-color: #0f1f4f;
-			top: calc(calc(var(--hex-height) / - 2));
+			bottom: 99.8%;
 			border-top: none;
 			border-bottom-width: calc(var(--hex-height) / 2);
 		}
 
 		&:after {
-			bottom: calc(calc(var(--hex-height) / - 2));
+			top: 99.8%;
 			border-bottom: none;
 			border-top-width: calc(var(--hex-height) / 2);
 			border-top-color: #0f1f4f;
 
 		}
+
+
 
 		h6 {
 			line-height: 1.5;
